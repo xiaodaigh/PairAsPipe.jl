@@ -2,6 +2,8 @@ module PairAsPipe
 
 export @pap
 
+using MacroTools: @capture
+
 macro pap(ex)
     has_newcol = @capture(ex, newcol_ = rhs_)
 
