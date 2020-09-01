@@ -1,6 +1,6 @@
 ## PairAsPipe.jl
 
-**P**air**A**s**P**ipe (`@pap`) friednly with DataFrames.jl's API.
+**P**air**A**s**P**ipe (`@pap`) is friendly with DataFrames.jl's API.
 
 The macro `@pap` is designed to transform `newcol = fn(:col)` to `:col => fn => :newcol` which is a elegant (ab)use of pairs syntax (`a => b`) as pipes. Hence the name of the package.
 
