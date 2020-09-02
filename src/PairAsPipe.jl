@@ -2,6 +2,7 @@ module PairAsPipe
 
 export @pap
 
+using MacroTools
 using MacroTools: @capture
 
 macro pap(ex)
@@ -30,8 +31,8 @@ macro pap(ex)
     # :col => fn
     fn = Expr(:->, lhs, rhs)
 
-    # the (:col1, :col2) in
-    # the (:col1, :col2) => fn
+    # the [:col1, :col2] in
+    # the [:col1, :col2] => fn
     cols = Expr(:vect, symbols...)
 
     if has_newcol
