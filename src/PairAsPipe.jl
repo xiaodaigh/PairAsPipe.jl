@@ -6,6 +6,7 @@ using MacroTools
 using MacroTools: @capture
 
 macro pap(ex)
+
     has_newcol = @capture(ex, newcol_ = rhs_)
 
     if !has_newcol
@@ -39,7 +40,7 @@ macro pap(ex)
         fn = Expr(:call, :(=>), fn, QuoteNode(newcol))
     end
 
-    Expr(:call, :(=>), cols, fn)
+    esc(Expr(:call, :(=>), cols, fn))
 end
 
 end
