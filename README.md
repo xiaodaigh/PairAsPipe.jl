@@ -1,3 +1,5 @@
+# This has been deprecated in favour of [PairsMacros.jl](https://github.com/matthieugomez/PairsMacros.jl)
+
 ## PairAsPipe.jl
 
 **P**air**A**s**P**ipe (`@pap`) is friendly with DataFrames.jl's API.
