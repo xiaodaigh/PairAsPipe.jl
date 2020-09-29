@@ -23,5 +23,5 @@ filter(@pap(:a == 1), df) # same as filter([:a] => a -> a == 1, df)
 
 ### Similar Work
 
-* [DataFramesMacros.jl](https://github.com/matthieugomez/DataFramesMacros.jl)
+* [PairsMacros.jl](https://github.com/matthieugomez/PairsMacros.jl)
 * [DataFramesMeta.jl](https://github.com/JuliaData/DataFramesMeta.jl)
